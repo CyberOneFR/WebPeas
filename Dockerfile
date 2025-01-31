@@ -25,15 +25,15 @@ ENV PATH="$PATH:/root/go/bin"
 
 RUN gem install nokogiri wpscan
 
-COPY ./CMSeeK /webpeas/CMSeeK
-RUN python3 -m venv /webpeas/CMSeeK/venv
-RUN /webpeas/CMSeeK/venv/bin/pip install -r /webpeas/CMSeeK/requirements.txt
-RUN ln -s /webpeas/CMSeeK/venv/bin/python3 /usr/local/bin/cmseek
-
 COPY ./dirsearch /webpeas/dirsearch
 RUN python3 -m venv /webpeas/dirsearch/venv
 RUN /webpeas/dirsearch/venv/bin/pip install -r /webpeas/dirsearch/requirements.txt
 RUN ln -s /webpeas/dirsearch/venv/bin/python3 /usr/local/bin/dirsearch
+
+COPY ./CMSeeK /webpeas/CMSeeK
+RUN python3 -m venv /webpeas/CMSeeK/venv
+RUN /webpeas/CMSeeK/venv/bin/pip install -r /webpeas/CMSeeK/requirements.txt
+RUN ln -s /webpeas/CMSeeK/venv/bin/python3 /usr/local/bin/cmseek
 
 COPY ./auto.sh /webpeas/auto.sh
 COPY ./graph.py /webpeas/graph.py
