@@ -1,4 +1,4 @@
-# WebPeas
+<!-- # WebPeas
 
 WebPeas is the Web verstion of linpeas for web-pentesting, that provides an overview of various aspects of a web application, including:
 
@@ -38,4 +38,6 @@ To use WebPeas, run the ```./auto.sh <target>``` script and follow the prompts.
 
 ## Contributing
 
-If you'd like to contribute to the development of WebPeas, please feel free to fork the repository and submit a pull request with your changes. All contributions are welcome and appreciated.
+If you'd like to contribute to the development of WebPeas, please feel free to fork the repository and submit a pull request with your changes. All contributions are welcome and appreciated. -->
+
+WIP
